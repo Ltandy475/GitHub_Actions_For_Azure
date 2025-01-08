@@ -2,7 +2,7 @@ on:
   push
 
 jobs:
-  login_to_Azure
+  login_to_Azure:
     runs-on: ubuntu-latest
 
     steps:
@@ -15,8 +15,6 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Login Confirmation
-        runs-on: ubuntu-latest
-          
         if: success()
         run: echo "Login Succcessful."
           
