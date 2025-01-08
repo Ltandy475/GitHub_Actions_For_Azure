@@ -1,0 +1,18 @@
+on:
+  push
+
+jobs:
+  Deploy_resources:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Login to Azure
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Create Resouce Group
+        run: az group create --name "myresourcegroup" --location eastus
