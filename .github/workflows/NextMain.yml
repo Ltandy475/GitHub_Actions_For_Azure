@@ -15,4 +15,9 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Create Resouce Group
-        run: az group create --name "myresourcegroup" --location eastus
+        #run: az group create --name "myresourcegroup" --location eastus
+        run:  az grpoup list --output table
+
+      - name: Create App Service Plan
+        run:  |
+          az appservice plan create --name myappserviceplan --resource-group "myresourcegroup" --sku F1
