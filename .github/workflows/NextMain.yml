@@ -18,6 +18,6 @@ jobs:
         #run: az group create --name "myresourcegroup" --location eastus
         run:  az group list --output table
 
-      - name: Create App Service Plan
-        run:  |
-          az appservice plan create --name myappserviceplanLT --resource-group "myresourcegroup" --sku F1 
+      #- name: Create App Service Plan
+        #run:  |
+          #az appservice plan create --name myappserviceplanLT --resource-group "myresourcegroup" --sku F1 
