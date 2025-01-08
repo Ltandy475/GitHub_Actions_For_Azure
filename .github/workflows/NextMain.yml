@@ -16,7 +16,7 @@ jobs:
 
       - name: Create Resouce Group
         #run: az group create --name "myresourcegroup" --location eastus
-        run:  az group list --output table
+        run:  az group list --output table 
 
       #- name: Create App Service Plan
         #run:  |
