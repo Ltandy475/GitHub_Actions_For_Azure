@@ -2,7 +2,7 @@ on:
   push
 
 env:
-  sql_server: mysql12-dataserver_lt
+  sql_server: mysql12-dataserver-lt
   database_name: db1_lt
   resource-group: myresourcegroup5_lt
   location: centralus
