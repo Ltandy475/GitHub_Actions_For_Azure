@@ -9,6 +9,7 @@ env:
   admin-user: LaMonte
   admin-password: ret90@367
   sql_command: "show databases"
+  just_stuff: "Ok"
 
 jobs:
   cleanup_resources:
